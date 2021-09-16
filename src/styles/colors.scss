@@ -1,0 +1,11 @@
+@mixin gradient($direction, $list) {
+  background: -webkit-linear-gradient($direction, $list);
+}
+
+$button-normal-color: #5c0eba, #900cd2;
+
+.button-normal {
+  @include gradient(left, $button-normal-color);
+  border-radius: 30px !important;
+  min-width: 100px !important;
+}

@@ -1,0 +1,20 @@
+@import "Home";
+@import "BuyLambo";
+@import "MultiChart";
+@import "Premium";
+@import "Promote";
+@import "RugDetector";
+@import "Tools";
+
+body {
+  margin: 0;
+}
+
+.loading {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none !important;
+}

@@ -1,0 +1,80 @@
+$active-menu-item: #5e0fba, #0e0e0f;
+.left-nav {
+  width: 60px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #0e0e0f !important;
+  overflow: auto;
+  z-index: 10000000;
+  transition: width 0.3s;
+  padding: 5px;
+  &.open {
+    width: 250px;
+  }
+  .menu-bar-item {
+    height: 50px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background: #0e0e0e;
+    border-radius: 25px;
+    margin: 5px 0;
+    span {
+      color: #5e5e5e !important;
+    }
+    svg {
+      color: #5e0fba !important;
+    }
+    &.active {
+      @include gradient(left, $active-menu-item);
+      span {
+        color: white !important;
+      }
+      svg {
+        color: white !important;
+      }
+    }
+    &:hover {
+      span {
+        color: white !important;
+      }
+    }
+    &.disabled {
+      background: transparent !important;
+      cursor: auto;
+      opacity: 0.8;
+      font-style: italic;
+    }
+  }
+
+  .logo {
+    width: 100%;
+  }
+}
+
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 !important;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+@media (max-width: $md-width) {
+  .left-nav {
+    width: 0;
+    padding: 0 !important;
+  }
+}
+
+@media (min-width: $md-width) {
+  .left-nav {
+    &:hover {
+      width: 250px;
+    }
+  }
+}

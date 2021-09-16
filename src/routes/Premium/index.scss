@@ -1,0 +1,184 @@
+.premium {
+  line-height: 1.8;
+  .limited-time {
+    margin-bottom: 30px;
+  }
+  .full-width {
+    width: 100%;
+  }
+  .premium-container {
+    margin: auto;
+    .wrapper {
+      padding: 10px;
+      &.align-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .title {
+      margin-bottom: 10px;
+    }
+    .description {
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    .lp-holding-wrapper {
+      width: 100%;
+      border-radius: 30px;
+      display: flex;
+      background: linear-gradient(to right, #670dc1 30%, #ab01fc 80%);
+      margin-bottom: 50px;
+      .lp-holding {
+        border-radius: 30px;
+        background: linear-gradient(to top, #670dc1 -30%, #ab01fc 80%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 60px;
+        position: relative;
+        flex: 1;
+        min-width: 110px;
+        .lp-circle {
+          width: 130px;
+          position: absolute;
+          top: 10px;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+        .usd-value {
+          margin-top: 40px;
+          font-size: 22px;
+          font-weight: bold;
+        }
+        .percentage {
+          margin-top: 10px;
+          font-size: 13px;
+        }
+        .label {
+          margin-top: 5px;
+          font-size: 15px;
+        }
+      }
+      .ad-wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 30px 15px 60px;
+        align-items: center;
+        flex: 100;
+        .lp-ad {
+          height: 100px;
+        }
+        .label {
+          font-size: 30px;
+          font-weight: bold;
+        }
+      }
+    }
+    .feature-block {
+      padding: 10px;
+      .paper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px !important;
+        border-radius: 20px;
+        .image {
+          height: 80px;
+          margin-bottom: 20px;
+        }
+        .text {
+          text-align: center;
+          color: #5f5f5f;
+          font-size: 14px;
+          a {
+            color: #5f5f5f !important;
+          }
+        }
+      }
+    }
+    .features-block {
+      border-radius: 30px;
+      padding: 30px;
+      margin-top: 30px;
+      .features-block-header {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-wrap: wrap;
+        line-height: 1;
+        margin-bottom: 30px;
+        .features-block-title {
+          font-size: 30px;
+          text-align: left;
+          b.big {
+            font-size: 52px;
+          }
+          .yellow {
+            color: #ffe600;
+          }
+          .features-block-subheading {
+            line-height: 1.5;
+            font-size: 23px;
+            font-weight: bold;
+            color: #b9b7b7;
+          }
+        }
+        .subscription-button {
+          max-width: 200px;
+          border-color: white;
+          border-radius: 20px;
+          white-space: nowrap;
+          font-size: 12px;
+          padding: 7px;
+          margin: 20px 20px 0;
+        }
+      }
+      &.free-features {
+        background-color: #280450;
+      }
+      &.premium-features {
+        background: linear-gradient(to right, #670dc1 30%, #ab01fc 80%);
+        .features-list {
+          .features-title {
+            color: #230342;
+          }
+        }
+        .premium-img {
+          height: 80px;
+          margin: 10px;
+        }
+      }
+      .features-list {
+        padding: 10px 5px;
+        .features-title {
+          color: #9303df;
+          font-weight: bold;
+          font-size: 17px;
+        }
+        .feature {
+          font-size: 14px;
+          font-weight: bold;
+          display: flex;
+          & > div {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  .pancake-lp-link {
+    color: #b9b7b7 !important;
+    text-decoration: none !important;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: $md-width) {
+  .premium {
+    padding-top: 30px;
+  }
+}

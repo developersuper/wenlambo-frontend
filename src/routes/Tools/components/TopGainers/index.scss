@@ -1,0 +1,38 @@
+.top-gainers {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .top-gainers-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .dropdown-wrapper {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      .dropdown {
+        margin-right: 10px;
+      }
+    }
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .name-wrapper {
+    display: flex;
+    .symbol {
+      color: #5f5f5f;
+      margin-left: 10px;
+    }
+  }
+  .percentage {
+    display: flex;
+    align-items: center;
+    &.increase {
+      color: green;
+    }
+    &.decrease {
+      color: red;
+    }
+  }
+}

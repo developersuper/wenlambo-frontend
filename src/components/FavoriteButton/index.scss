@@ -1,0 +1,15 @@
+.favorite-button {
+  padding: 3px !important;
+  .favorite-icon {
+    width: 30px;
+    opacity: 0.3;
+    transition: opacity 0.5s;
+    &.active {
+      opacity: 1;
+    }
+    &.rounded {
+      width: 20px;
+      border-radius: 10px;
+    }
+  }
+}

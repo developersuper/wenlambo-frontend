@@ -1,0 +1,30 @@
+.swap-container {
+  height: calc(100% + 8px);
+  .paper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .text-field {
+    margin: 10px 0;
+  }
+  .button-group {
+    display: flex;
+    width: 100%;
+    & > * {
+      flex: 1;
+    }
+  }
+  .info-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: $md-width) {
+  .swap-container {
+    height: auto;
+  }
+}

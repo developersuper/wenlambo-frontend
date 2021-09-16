@@ -1,0 +1,12 @@
+.single-chart-tradingview {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  .single-chart-container {
+    flex: 1;
+  }
+  .input-symbol {
+    display: flex;
+    align-items: center;
+  }
+}

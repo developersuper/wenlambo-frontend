@@ -1,0 +1,8 @@
+.trading-view-wrapper {
+  height: 100%;
+  width: 100%;
+  .trading-view-container {
+    margin-top: 45px;
+    height: calc(100% - 45px) !important;
+  }
+}

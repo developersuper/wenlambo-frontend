@@ -1,0 +1,56 @@
+.token-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  line-height: 1.4;
+  font-weight: bold;
+  .info {
+    p {
+      font-size: 15px !important;
+    }
+  }
+  .title-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    &:hover {
+      font-weight: bold;
+    }
+  }
+  .title {
+    color: #606060;
+    text-align: left;
+  }
+  text-align: center;
+  .first-info {
+    margin-top: 20px;
+  }
+  h6 {
+    margin-bottom: 10px;
+  }
+  p {
+    font-size: 19px;
+    .subheading {
+      color: #606060;
+      display: block;
+      margin-bottom: -5px;
+    }
+    margin-bottom: 5px;
+  }
+  .buttons {
+    max-width: 300px;
+    margin: 0 auto;
+    a {
+      margin: 5px;
+      button {
+        padding: 4px 0;
+      }
+    }
+  }
+}

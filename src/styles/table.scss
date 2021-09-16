@@ -1,0 +1,39 @@
+table {
+  border-collapse: separate;
+  thead {
+    tr {
+      th {
+        background-color: #181818 !important;
+        border-bottom: none !important;
+        color: #606060 !important;
+      }
+    }
+  }
+  .data-row {
+    opacity: 0.8;
+    cursor: pointer;
+    overflow: auto;
+    &:hover {
+      opacity: 1;
+    }
+    border: none !important;
+    td {
+      border: none !important;
+    }
+    &.active {
+      background-color: rgba(255, 255, 255, 0.2);
+      td:first-child {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+      }
+      td:last-child {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+      }
+    }
+  }
+  td,
+  th {
+    padding: 6px !important;
+  }
+}

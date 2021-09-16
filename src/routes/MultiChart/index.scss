@@ -1,0 +1,11 @@
+@import "components";
+
+.multi-chart {
+  width: 100%;
+  background-color: #202020;
+  padding: 10px !important;
+  border-radius: 20px;
+  .multi-chart-item {
+    padding: 10px;
+  }
+}

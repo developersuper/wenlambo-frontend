@@ -1,0 +1,61 @@
+.trade-history {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .trade-history-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    .toggle-button {
+      text-transform: none;
+    }
+  }
+  .table-wrapper {
+    max-height: 500px;
+  }
+  .title {
+    margin-bottom: 10px;
+    color: #606060;
+  }
+  table {
+    td {
+      line-height: 1.2;
+      * {
+        line-height: 1.2;
+      }
+      padding: 3px 5px;
+      a {
+        color: white;
+      }
+    }
+    .wallet-cell {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      & > * {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+      }
+    }
+    .amount-item-wrapper {
+      display: inline-flex;
+      flex-direction: column;
+      .amount-item {
+        display: flex;
+        .amount {
+          text-align: right;
+          margin-right: 3px;
+          width: 120px;
+          word-break: break-all;
+        }
+        .symbol {
+          color: gray;
+          flex: 1;
+        }
+      }
+    }
+  }
+}

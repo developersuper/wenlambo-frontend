@@ -1,0 +1,25 @@
+.ads-wrapper {
+  margin-bottom: 8px;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  .iframe-wrapper {
+    display: inline-block;
+    max-width: 100%;
+  }
+  .banner {
+    width: 100%;
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .ads-wrapper {
+    .iframe-wrapper {
+      display: none;
+    }
+    .banner {
+      display: block;
+    }
+  }
+}

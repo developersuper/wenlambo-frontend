@@ -1,0 +1,76 @@
+.donut-chart {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  &::after {
+    content: " ";
+    position: absolute;
+    left: 50%;
+    width: 125px;
+    height: 125px;
+    top: 100px;
+    transform: translate(-50%, -50%);
+    border: 2px dotted gray;
+    border-radius: 50%;
+  }
+  .donut-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+    .info {
+      position: absolute;
+      left: 50%;
+      top: 80px;
+      transform: translateX(-50%);
+      color: #606060;
+    }
+  }
+  .legend {
+    width: 200px;
+    margin-left: 10px;
+    overflow: auto;
+    .legend-item {
+      align-items: center;
+      justify-content: space-between;
+      display: flex;
+      cursor: pointer;
+      opacity: 0.8;
+      width: 100%;
+      color: #606060;
+      & > div {
+        display: flex;
+        align-items: center;
+      }
+      p {
+        font-weight: 100 !important;
+      }
+      &.active {
+        color: white;
+        opacity: 1;
+        p {
+          font-weight: bold !important;
+        }
+      }
+      &:hover {
+        p {
+          font-weight: bold !important;
+        }
+      }
+      .legend-bg {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        border-width: 1px;
+        border-style: solid;
+        margin-right: 5px;
+      }
+    }
+  }
+}

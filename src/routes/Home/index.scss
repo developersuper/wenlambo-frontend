@@ -1,0 +1,176 @@
+@import "components/Portfolio/";
+@import "components/TrendingTokens/";
+@import "components/TokenInfo";
+
+$announcement-bar-bg: #5c0eba, #202020;
+
+/* The animation code */
+@keyframes rotation {
+  from {
+    margin-left: 0;
+  }
+  to {
+    margin-left: -990px;
+  }
+}
+
+.home {
+  width: 100% !important;
+  height: 100%;
+  margin: 0px !important;
+  padding: 8px;
+  position: relative;
+  &.loading {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  .home-section {
+    height: 50vh;
+    min-height: 300px;
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    &.logo-container {
+      flex: 1;
+    }
+    &.big {
+      min-height: 500px;
+    }
+    &.small {
+      max-height: 300px;
+    }
+    &.tiny {
+      height: auto;
+      min-height: auto;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  .swap-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .connect-container {
+    margin-left: auto;
+  }
+
+  .connect-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    & > * {
+      margin: 0 5px;
+    }
+    .dropdown {
+      &::before,
+      &::after {
+        border-bottom: none !important;
+      }
+      color: gray;
+      select {
+        padding-right: 12px;
+      }
+      svg {
+        color: #5e0fba;
+      }
+    }
+  }
+
+  .announcement-bar {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    white-space: nowrap;
+    display: flex;
+    overflow: hidden;
+    @include gradient(left, $announcement-bar-bg);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    .announcement-wrapper {
+      overflow: hidden;
+      margin-left: 20px;
+      padding: 10px 15px;
+      .announcement {
+        white-space: nowrap;
+        animation-name: rotation;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        a {
+          color: white !important;
+          text-decoration: none;
+          font-weight: bold;
+        }
+        span {
+          margin-right: 50px;
+        }
+      }
+    }
+    .bnb-price {
+      white-space: nowrap;
+      padding: 10px 15px;
+      font-weight: bold;
+      background-color: #202020;
+      border-radius: 20px;
+      position: relative;
+      &::after {
+        content: " ";
+        position: absolute;
+        right: -10px;
+        top: 0;
+        width: 2px;
+        height: 100%;
+        background-color: white;
+      }
+    }
+  }
+
+  .content {
+    background-color: #202020;
+    padding: 10px !important;
+    border-radius: 20px;
+    .home-section > div {
+      margin: 10px;
+      padding: 20px !important;
+      border-radius: 20px;
+    }
+  }
+}
+
+@media (max-width: $md-width) {
+  .home {
+    .content {
+      padding: 5px !important;
+      .home-section > div {
+        margin: 5px;
+        padding: 20px 10px 10px !important;
+        border-radius: 20px;
+      }
+    }
+    .home-section {
+      height: auto;
+      min-height: auto;
+      max-height: fit-content;
+      position: relative;
+      &.small,
+      &.big {
+        height: auto;
+        max-height: fit-content;
+        min-height: auto;
+      }
+      .paper {
+        height: auto;
+      }
+
+      &.logo-container {
+        width: 100%;
+        flex: auto;
+      }
+      &.connect-container {
+        width: 100%;
+      }
+    }
+  }
+}

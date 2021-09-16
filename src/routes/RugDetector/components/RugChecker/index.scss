@@ -1,0 +1,33 @@
+.rug-checker {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .rug-checker-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .symbol-finder {
+    margin-top: 20px;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .name-wrapper {
+    display: flex;
+    .symbol {
+      color: #5f5f5f;
+      margin-left: 10px;
+    }
+  }
+  .percentage {
+    display: flex;
+    align-items: center;
+    &.increase {
+      color: green;
+    }
+    &.decrease {
+      color: red;
+    }
+  }
+}

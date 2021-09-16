@@ -1,0 +1,35 @@
+$indicator-color: #5c0eba, #181818;
+$indicator-color1: #181818, #5c0eba;
+/* The animation code */
+@keyframes bgmove {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.indicator {
+  width: 100%;
+  height: 5px;
+  border-radius: 5px;
+  @include gradient(left, $indicator-color);
+  position: relative;
+  &.loading {
+    &::after {
+      content: " ";
+      border-radius: 5px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      @include gradient(left, $indicator-color1);
+      animation-name: bgmove;
+      animation-duration: 1s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-direction: alternate;
+    }
+  }
+}

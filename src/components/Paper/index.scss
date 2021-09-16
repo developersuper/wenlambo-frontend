@@ -1,0 +1,53 @@
+.paper {
+  height: 100%;
+  box-sizing: border-box;
+  overflow: auto;
+  background-color: #202020 !important;
+  border: none !important;
+  box-shadow: none !important;
+  position: relative;
+  &.dark {
+    background-color: #181818 !important;
+  }
+  &.transparent {
+    background-color: transparent !important;
+    box-shadow: none;
+  }
+  &.expanded {
+    position: fixed;
+    left: 68px !important;
+    right: 0px;
+    top: 0;
+    height: 100% !important;
+    z-index: 1000000;
+    overflow: auto;
+    margin: 0 !important;
+  }
+  .expand-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+  }
+  &.loading {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+
+  &.full-width {
+    width: 100%;
+  }
+
+  .title {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: $md-width) {
+  .paper {
+    &.expanded {
+      left: 0 !important;
+      padding-bottom: 0 !important;
+    }
+  }
+}

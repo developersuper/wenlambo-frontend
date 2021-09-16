@@ -1,0 +1,47 @@
+@import "BalanceTable";
+@import "PortfolioDonutChart";
+@import "Modals";
+
+.portfolio {
+  height: 100%;
+  padding: 10px;
+  .title {
+    color: #606060;
+  }
+  .balance-table-wrapper {
+    height: 100%;
+    overflow: auto;
+  }
+  .upper {
+    button:not(.wallet-address) {
+      background-color: #202020 !important;
+      border-radius: 10px;
+      box-shadow: none !important;
+      text-transform: unset;
+      margin: 5px;
+      .button-icon {
+        width: 30px;
+        margin-right: 7px;
+        margin-left: -5px;
+      }
+    }
+    .wallet-address {
+      background-color: transparent !important;
+    }
+  }
+  .bottom {
+    height: calc(100% - 103px);
+  }
+}
+
+@media (max-width: $md-width) {
+  .portfolio {
+    height: auto;
+    .upper {
+      height: auto;
+    }
+    .bottom {
+      height: auto;
+    }
+  }
+}

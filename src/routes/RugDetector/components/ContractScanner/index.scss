@@ -1,0 +1,72 @@
+.margin-top20 {
+  margin-top: 18px !important;
+}
+.contract-help-subtitle {
+  cursor: pointer;
+  margin: 5px !important;
+}
+.scanner-modal {
+  background: #2f2f2f;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  position: absolute;
+  max-width: 500px;
+  width: 100%;
+  outline: none;
+}
+.contract-help-subtitle:hover {
+  color: #4d0f96;
+}
+.scanner-modal-title {
+  margin: 0;
+  font-size: 22px !important;
+}
+.scanner-modal-find {
+  margin: 16px 0px;
+}
+.scanner-modal-found {
+  p {
+    color: #868686;
+    font-size: 16px !important;
+    margin: 16px 0px !important;
+  }
+  a {
+    margin: 11px 0px !important;
+    color: #add8e6;
+  }
+}
+.small-link {
+  font-size: 11px !important;
+  margin: 11px !important;
+}
+div.scanner-results {
+  font-size: 16px !important;
+  margin-top: 32px;
+  p {
+    margin: 5px 0px 0px 0px !important;
+  }
+  .time {
+    color: #038bff;
+  }
+  .text-pink {
+    color: #bd59bd;
+  }
+  .text-lightblue {
+    color: lightblue;
+  }
+  .text-green {
+    color: lightgreen;
+  }
+  .text-yello {
+    color: yellow;
+  }
+  .text-red {
+    color: red;
+  }
+  .text-lightyello {
+    color: lightyellow;
+  }
+}

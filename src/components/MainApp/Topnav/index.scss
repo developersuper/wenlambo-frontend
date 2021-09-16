@@ -1,0 +1,24 @@
+.top-nav {
+  position: fixed !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row !important;
+  align-items: center;
+  padding: 5px 8px 5px 68px;
+  width: 100% !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+
+  width: 80px !important;
+  .logo {
+    height: 100px;
+  }
+}
+
+@media (max-width: $md-width) {
+  .top-nav {
+    padding-left: 8px !important;
+  }
+}

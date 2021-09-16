@@ -1,0 +1,28 @@
+.modal-body {
+  position: absolute;
+  min-width: 500px;
+  max-width: 800px;
+  background: #2f2f2f;
+  border-radius: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  min-height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  & > * {
+    margin: 10px !important;
+  }
+}
+
+@media (max-width: $md-width) {
+  .modal-body {
+    min-width: calc(100vw - 30px);
+    max-width: calc(100vw - 30px);
+    padding: 10px;
+    max-height: calc(100vh - 80px);
+  }
+}

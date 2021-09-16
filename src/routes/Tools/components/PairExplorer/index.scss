@@ -1,0 +1,26 @@
+.pair-explorer {
+  .trading-view-wrapper {
+    .trading-view-container {
+      margin-top: 0 !important;
+      height: 300px !important;
+    }
+  }
+  .trade-history {
+    height: auto;
+    .table-wrapper {
+      max-height: fit-content !important;
+    }
+  }
+  .pair-explorer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .title {
+      margin-bottom: 10px;
+    }
+  }
+  .symbol-finders {
+    margin-top: 10px;
+    display: flex;
+  }
+}

@@ -1,0 +1,21 @@
+@import "Leftnav";
+@import "Topnav";
+.body {
+  flex: 1;
+  padding: 10px;
+  padding-left: 70px;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  opacity: 1;
+  background-color: #0e0e0f;
+  width: calc(100% - 80px);
+  min-height: calc(100% - 20px);
+}
+
+@media (max-width: $md-width) {
+  .body {
+    padding-left: 10px;
+    width: calc(100% - 20px);
+  }
+}

@@ -1,0 +1,20 @@
+.contract-events {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  .contract-events-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .title {
+    margin-bottom: 10px;
+  }
+  .name-wrapper {
+    display: flex;
+    .symbol {
+      color: #5f5f5f;
+      margin-left: 10px;
+    }
+  }
+}
